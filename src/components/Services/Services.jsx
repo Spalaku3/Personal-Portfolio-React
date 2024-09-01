@@ -4,9 +4,10 @@ import Card from "../Card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
+ // Assuming you have an Angular image in your img folder
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+
 
 const Services = () => {
   // context
@@ -31,9 +32,9 @@ const Services = () => {
           <br />
           ispum is simpley dummy text of printing
         </spane>
-        <a href={Resume} download>
+        {/* <a href={Resume} download>
           <button className="button s-button">Download CV</button>
-        </a>
+        </a> */}
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
@@ -46,7 +47,7 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
+            heading={"Data Analytics and Consulting"}
             detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
           />
         </motion.div>
@@ -58,7 +59,7 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
+            heading={"Machine Learning and AI Services"}
             detail={"Html, Css, JavaScript, React, Nodejs, Express"}
           />
         </motion.div>
@@ -70,13 +71,27 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Gen AI and LLM Services"}
             detail={
               "Lorem ispum dummy text are usually use in section where we need some random text"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
+        {/* 4th - Angular card */}
+        <motion.div
+          initial={{ top: "26rem", left: "0rem" }}
+          whileInView={{ left: "10rem" }}
+          transition={transition}
+        >
+          <Card
+            emoji={Humble}
+            heading={"Angular Services"}
+            detail={"Building dynamic and responsive web apps with Angular."}
+            color="rgba(252, 68, 31, 0.45)"
+          />
+        </motion.div>
+
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

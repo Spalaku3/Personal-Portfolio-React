@@ -27,16 +27,16 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hy! We are</span>
+          <span>Software Service Providers</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
+        {/* <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
-        </Link>
+        </Link> */}
         {/* social icons */}
         <div className="i-icons">
           <img src={Github} alt="" />
@@ -50,32 +50,51 @@ const Intro = () => {
         <img src={Vector2} alt="" />
         <img src={boy} alt="" />
         {/* animation */}
-        <motion.img
+        {/* <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
-        />
+        /> */}
 
         <motion.div
           initial={{ top: "-4%", left: "74%" }}
-          whileInView={{ left: "68%" }}
+          whileInView={{ left: "58%" }}
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Finance" />
+        </motion.div>
+
+        <motion.div
+          initial={{ left: "-86%" }}
+          whileInView={{ left: "-4%" }}
+          transition={transition}
+          className="floating-div"
+          >
+          <FloatinDiv img={thumbup} text1="Dad" />
         </motion.div>
 
         {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "5rem" }}
           transition={transition}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="BFSI"/>
+        </motion.div>
+
+        <motion.div
+          initial={{ left: "19rem", top: "18rem" }}
+          whileInView={{ left: "24rem" }}
+          transition={transition}
+          className="floating-div"
+        >
+          {/* floatinDiv mein change hy dark mode ka */}
+          <FloatinDiv img={thumbup} text1="BFSI"/>
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
